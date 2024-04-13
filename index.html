@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+   <title>Login Form </title>
+
+   <style>
+      body{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: black;
+        text-align: center;
+        margin:0;
+        padding: 0;
+      }
+      .login-container{
+        max-width: 300px;
+        margin:100px auto;
+        background-color:black;
+        padding:20px;
+        border-radius:5px;
+      }
+      .login-container{
+        display: block;
+        margin-bottom: 8px;
+      }
+      .login-container input{
+        width:100%;
+        padding:8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+      .login-container{
+        background-color: black;
+        color:aqua;
+        padding: 10px;
+        border:none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      
+      </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Let's Login</h2>
+        <form action="/login"method="post">
+         <label for="username">Username:</label>
+         <input type="text"id="username"name="username"autocomplete>
+
+         <label for="password">Password:</label>
+         <input type="password"id="password"name="password"required>
+
+         <button type="submit">Login</button>
+        </form>
+    </div> 
+</body>
+</html>
